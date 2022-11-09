@@ -1,0 +1,110 @@
+.drop-zone {
+  border: #ddd 4px dashed;
+  border-radius: 2px;
+
+  .title-label {
+    font-size: 20pt;
+    color: #ccc;
+    padding: 0 10px;
+  }
+}
+
+// 投稿編集時の写真表示
+.image-wrapper {
+  max-width: 100%;
+  min-height: 240px;
+  background-color: #e9ecef;
+  margin: 4px auto;
+  padding: 12px;
+  text-align: center;
+
+  img {
+    max-width: 100%;
+    object-fit: cover;
+  }
+}
+
+.reserve-image-wrapper {
+  img {
+    max-width: 50%;
+    float: right;
+  }
+}
+
+// 店舗一覧
+.location-checkboxes-wrapper {
+  height: 140px;
+  min-height: 100px;
+  max-height: 180px;
+  overflow-y: auto;
+
+  div.location-row {
+    display: flex;
+  }
+
+  input.location-checkboxes {
+  //  height: 18px;
+  //  width: 18px;
+    vertical-align: middle;
+    margin: 0 0.2rem 0.2rem 0;
+  }
+
+  label {
+    margin-bottom: 0.2rem;
+  }
+}
+
+ul.image_list li {
+  display: inline-block;
+}
+
+ul.image_list li .image_box {
+  width: 200px;
+  height: 252px;
+  position: relative;
+}
+
+.image_box .btn_area {
+  height: 32px;
+}
+
+.image_box img.thumbnail {
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+}
+
+.image_box img.thumbnail.checked {
+  border: 6px solid red;
+  box-sizing: border-box;
+}
+
+.image_box .image_checkbox {
+  position: absolute;
+  top: 45px;
+  right: 12px;
+  display: none;
+  transform: scale(2);
+  cursor: pointer;
+}
+
+.image_box img.thumbnail.checked + .image_checkbox {
+  display: block;
+}
+
+.image_box {
+  background-color: white;
+  color: darkgray;
+  text-align: center;
+  font-size: small;
+}
+
+.file_box {
+  img.thumbnail {
+    width: 100px;
+  }
+}
+
+.delete-button {
+  height: 40px;
+}

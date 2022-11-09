@@ -1,0 +1,90 @@
+@import "~dropzone/dist/dropzone.css";
+
+.form-control::placeholder {
+  color: lightgrey;
+}
+
+// select や checkbox を readonly にする際に使用する
+.form-control-disabled {
+  color: gray;
+  pointer-events: none;
+}
+
+.disabled-wrapper {
+  background-color: $disabled-background;
+}
+
+// 一覧画面のテーブル調整
+
+table.index-table {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  table-layout: fixed;
+}
+
+.col-id {
+  font-weight: bold;
+  text-align: right;
+  width: 3rem;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.col-date {
+  text-align: center;
+  width: 8rem;
+}
+
+.col-status {
+  text-align: center;
+  width: 4rem;
+}
+
+.col-topic-type {
+  text-align: center;
+  width: 6rem;
+}
+
+.col-title {
+  max-width: 30%;
+}
+
+.col-summary {
+  max-width: 40%;
+}
+
+.col-action-type {
+  text-align: center;
+  width: 6rem;
+}
+
+.col-control {
+  text-align: right;
+  white-space: nowrap;
+}
+
+// dropzone
+.dropzone {
+  margin: 4px 0;
+  // border: 5px dashed #0f7fdc;
+  .dz-preview {
+    display: block;
+    margin: 16px auto;
+    width: 120px;
+  }
+  .dz-message {
+    button.dz-button {
+      background-color: #efefef;
+      border: 1px solid #999;
+      border-radius: 3px;
+      padding: 8px;
+    }
+  }
+}
+
+// emoji
+.resizable {
+  .emoji-wysiwyg-editor {
+    resize: vertical;
+  }
+}

@@ -1,0 +1,59 @@
+.tab-content {
+  padding: 0.75rem 1rem;
+  border-top: 1px solid #f8fafc;
+  border-right: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6;
+  border-left: 1px solid #dee2e6;
+  border-top-right-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
+
+// 投稿編集時の写真表示
+.image-wrapper {
+  max-width: 100%;
+  min-height: 240px;
+  background-color: #e9ecef;
+  margin: 4px auto;
+  padding: 12px;
+  text-align: center;
+  img {
+    max-width: 100%;
+    object-fit: cover;
+  }
+}
+
+.reserve-image-wrapper {
+  img {
+    max-width: 50%;
+    float: right;
+  }
+}
+
+// 店舗一覧
+.location-checkboxes-wrapper {
+  height: 140px;
+  min-height: 100px;
+  max-height: 180px;
+  overflow-y: auto;
+  div.location-row {
+    display: flex;
+  }
+  input.location-checkboxes {
+  //  height: 18px;
+  //  width: 18px;
+    vertical-align: middle;
+    margin: 0 0.2rem 0.2rem 0;
+  }
+  label {
+    margin-bottom: 0.2rem;
+  }
+}
+
+// emoji 位置調整
+#gmb_event_title_row,
+#gmb_summary_row {
+  .emoji-picker-icon {
+    top: 8px;
+  }
+}

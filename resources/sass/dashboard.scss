@@ -1,0 +1,137 @@
+.card {
+  box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
+  background-color: white;
+  color: black;
+  margin-bottom: 20px;
+  position: relative;
+  border: 0 none;
+
+  .card-body {
+    padding: 15px 15px 10px 15px;
+
+    &.table-full-width {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .table {
+      > thead > tr > th {
+        color: darkgray;
+        border-top: none;
+        border-bottom: none;
+        white-space: nowrap;
+      }
+      > tbody > tr > td {
+        font-size: 0.9em;
+        white-space: nowrap;
+      }
+    }
+  }
+
+  .card-header {
+    background-color: transparent;
+    padding: 15px 15px 0px;
+    border: 0;
+
+    .card-title {
+      color: darkgray;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+  }
+
+  .card-footer {
+    color: darkgray;
+    background-color: transparent;
+    border: 0;
+
+    .chart-legend {
+      color: darkgray;
+      padding-left: 15px;
+    }
+
+    .stats {
+      i {
+        margin-right: 5px;
+        position: relative;
+        top: 0px;
+        color: darkgray;
+      }
+    }
+  }
+}
+
+%card-stats {
+  hr {
+    margin: 5px 15px;
+  }
+}
+
+.card-stats {
+  .card-body {
+    padding: 15px 15px 0px;
+
+    .numbers {
+      text-align: right;
+      font-size: 1.9em;
+      white-space: nowrap;
+
+      p {
+        margin-bottom: 0;
+      }
+
+      .card-category {
+        color: darkgray;
+        font-size: 0.6em;
+        line-height: 1.4em;
+      }
+    }
+  }
+
+  .card-footer {
+    padding: 0px 15px 15px;
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+
+    .stats {
+      color: darkgray;
+    }
+
+    hr {
+      margin-top: 10px;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.tablesorter-headerUnSorted {
+  .icon-sort::before {
+    font-family: FontAwesome;
+    content: '\f0dc';
+    font-weight: 400;
+  }
+}
+
+.tablesorter-headerAsc {
+  .icon-sort::before {
+    font-family: FontAwesome;
+    content: '\f0de';
+    font-weight: 400;
+  }
+}
+
+.tablesorter-headerDesc {
+  .icon-sort::before {
+    font-family: FontAwesome;
+    content: '\f0dd';
+    font-weight: 400;
+  }
+}
+
+.col-name {
+  width: 10rem;
+}
+
+.col-rating {
+  width: 10rem;
+}

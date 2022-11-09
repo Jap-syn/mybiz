@@ -1,0 +1,25 @@
+.col-name {
+  width: 16rem;
+}
+
+.col-email {
+  max-width: 30%;
+}
+
+.col-button {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.account-checkboxes-wrapper {
+  height: 3000px;
+  min-height: 100px;
+  max-height: 380px;
+  overflow-y: auto;
+}
+
+.flexbox {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
